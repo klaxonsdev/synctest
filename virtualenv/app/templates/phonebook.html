@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }} Phonebook!</h1>
+    {% for contact in contacts %}
+    <div><p>{{ contact }} </b></p></div>
+     {% endfor %}
+{% endblock %}
