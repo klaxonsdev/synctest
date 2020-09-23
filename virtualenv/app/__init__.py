@@ -13,8 +13,4 @@ ma = Marshmallow(app)
 login = LoginManager(app)
 login.login_view = 'login'
 
-<<<<<<< HEAD
-from app import routes, models
-=======
 from app import routes, models, errors
->>>>>>> 10750702af3896eb6f04cbff45a48b730e2ee503
