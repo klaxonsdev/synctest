@@ -1,10 +1,16 @@
 from flask import render_template, flash, redirect, url_for, request, jsonify
 from werkzeug.urls import url_parse
 from app import app, db
+<<<<<<< HEAD
+from app.forms import LoginForm, RegistrationForm
+from flask_login import current_user, login_user, logout_user, login_required
+from app.models import User, Phonebook, phonebook_schema, phonebooks_schema
+=======
 from app.forms import LoginForm, RegistrationForm, EditProfileForm, EmptyForm
 from flask_login import current_user, login_user, logout_user, login_required
 from app.models import User, Phonebook, phonebook_schema, phonebooks_schema
 from datetime import datetime
+>>>>>>> 10750702af3896eb6f04cbff45a48b730e2ee503
 
 @app.route('/')
 @app.route('/index')
@@ -60,6 +66,8 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
+<<<<<<< HEAD
+=======
 @app.route('/user/<username>')
 @login_required
 def user(username):
@@ -136,6 +144,7 @@ def unfollow(username):
 ###
 ###
 ###
+>>>>>>> 10750702af3896eb6f04cbff45a48b730e2ee503
 @app.route('/phonebook')
 def phonebook():
     all_contacts =Phonebook.query.all()
