@@ -1,8 +1,10 @@
+# manually added
 virtualenv/app/__pycache__/*
 virtualenv/app/__pycache__/routes.cpython-38.pyc
 virtualenv\__pycache__
 __pycache__
 .vscode
+.pytest_cache
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
