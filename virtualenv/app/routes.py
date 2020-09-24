@@ -60,8 +60,6 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
 
-<<<<<<< HEAD
-=======
 @app.route('/user/<username>')
 @login_required
 def user(username):
@@ -138,7 +136,6 @@ def unfollow(username):
 ###
 ###
 ###
->>>>>>> 10750702af3896eb6f04cbff45a48b730e2ee503
 @app.route('/phonebook')
 def phonebook():
     all_contacts =Phonebook.query.all()

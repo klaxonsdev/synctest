@@ -13,10 +13,7 @@
             {% if current_user.is_anonymous %}
             <a href="{{ url_for('login') }}">Login</a>
             {% else %}
-<<<<<<< HEAD
-=======
             <a href="{{ url_for('user', username=current_user.username) }}">Profile</a>
->>>>>>> 10750702af3896eb6f04cbff45a48b730e2ee503
             <a href="{{ url_for('logout') }}">Logout</a>
             {% endif %}
             <a href="{{ url_for('phonebook') }}">Phonebook</a>
