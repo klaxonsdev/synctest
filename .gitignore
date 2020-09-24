@@ -2,6 +2,7 @@ virtualenv/app/__pycache__/*
 virtualenv/app/__pycache__/routes.cpython-38.pyc
 virtualenv\__pycache__
 __pycache__
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
